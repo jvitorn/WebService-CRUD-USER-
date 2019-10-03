@@ -1,8 +1,8 @@
 <?php
     $conn = mysqli_connect("localhost","id10950813_crudusuario","crudusuario","id10950813_crudusuario");
-    $nome = $_GET['nome'];
-    $email= $_GET['email'];
-    $senha= $_GET['senha'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
     $query = "insert to tb_usuario values (null,'$nome','$email','$senha')";
 
