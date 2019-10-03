@@ -3,14 +3,10 @@
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    if(!isset($email)){
-    $query = "insert to tb_usuario values (null,'$nome','$email','$senha')";
-
+    
+    $query = "insert into tb_usuario values (null,'$nome','$email','$senha')";
     mysqli_query($conn,$query);
 
     echo 'Cadastro Realizado Com Sucesso';
-    }
-    else{
-        echo 'Registro Vazio';
-    }
-    
+
+   
